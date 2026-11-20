@@ -69,7 +69,7 @@ th {
 	padding: 10px;
 }
 
-.btn-add, .btn-del, .btn-consol {
+.btn-add, .btn-del, .btn-consol, .btn-select {
 	color: white;
 	font-weight: bold;
 	border: none;
@@ -86,4 +86,8 @@ th {
 
 .btn-consol {
 	background-color: #bb8b02;
+}
+
+.btn-select {
+	background-color: #037dc0;
 }

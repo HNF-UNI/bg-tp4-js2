@@ -138,6 +138,15 @@ function consoleTableau() {
 	console.log(persons);
 }
 
+// en plus : coche toutes les lignes du tableau
+function selectAll() {
+	const chkboxes = document.querySelectorAll(".col_chkbox input");
+	// for..of sur les checkbox (slide 44)
+	for (const chkbox of chkboxes) {
+		chkbox.checked = true;
+	}
+}
+
 // supprime les lignes cochees
 function deleteRow() {
 	// tableau vide, rien a supprimer
