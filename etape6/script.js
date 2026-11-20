@@ -81,6 +81,15 @@ function update_summary() {
 
 	element_lignes.innerText = lignes + " ligne(s)";
 	element_points.innerText = "Total point(s)= " + total_points;
+
+	// en plus : la moyenne des points dans p2
+	const element_moyenne = document.getElementById("p2");
+	// si le tableau est vide on divise pas par 0, if else slide 42
+	if (lignes === 0) {
+		element_moyenne.innerText = "Moyenne= 0";
+	} else {
+		element_moyenne.innerText = "Moyenne= " + parseInt(total_points / lignes);
+	}
 }
 
 function doInsertRowTable(num, nom, prenom, points) {
