@@ -188,6 +188,12 @@ function deleteRow() {
 	}
 	persons = restants;
 
+	// en plus : on renumerote les lignes qui restent (1, 2, 3...)
+	const rows_restantes = table.querySelectorAll(".row");
+	for (let i = 0; i < rows_restantes.length; i++) {
+		rows_restantes[i].children[0].innerText = i + 1;
+	}
+
 	window.alert("Suppression effectuée !");
 	update_summary();
 }
